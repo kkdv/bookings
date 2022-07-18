@@ -1,4 +1,4 @@
-# Cloned from https://github.com/S4NDSTROM/bookings
+## Cloned from https://github.com/S4NDSTROM/bookings
 
 A booking system for cat coders that manages and displays bookings in a calendar
 
