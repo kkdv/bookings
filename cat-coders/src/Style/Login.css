@@ -1,0 +1,32 @@
+.Welcome {
+    margin-right: 5%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .Welcome p {
+    margin: 0 auto;
+  }
+  
+  .Welcome button {
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+  
+  .Welcome input {
+    width: 200px;
+    height: 30px;
+    margin-left: 8px;
+    margin-right: 7px;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    font-size: 14px;
+    background: transparent;
+    padding: 0 2px 0 2px;
+  }
+
+  .Welcome input::placeholder{
+    padding: 0 0 0 10px;
+  }

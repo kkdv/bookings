@@ -1,0 +1,15 @@
+body {
+  background-image: url(https://cdn.prod-carehubs.net/n1/802899ec472ea3d8/uploads/2016/09/a-pile-of-sea-salt-on-a-weathered-wooden-surface-original.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+  text-decoration: gray;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.logo-container {
+  overflow: hidden;
+}

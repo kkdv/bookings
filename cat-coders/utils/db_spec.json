@@ -1,0 +1,92 @@
+{
+  "name": "booking_pgdb",
+  "awsKeyName": "AWS_EC2Key_Krishna2",
+  "databaseType": "postgres_database",
+  "softwareProfileId": "b9d6a120-ed6d-11ec-8c80-62e7fb0263d6",
+  "softwareProfileVersionId": "b9d6a21a-ed6d-11ec-8c80-62e7fb0263d6",
+  "computeProfileId": "b9d5e794-ed6d-11ec-8c80-62e7fb0263d6",
+  "dbParameterProfileId": "b9d67b6e-ed6d-11ec-8c80-62e7fb0263d6",
+  "nodeCount": 1,
+  "actionArguments": [
+    {
+      "name": "listener_port",
+      "value": "5432"
+    },
+    {
+      "name": "database_size",
+      "value": "50"
+    },
+    {
+      "name": "auto_tune_staging_drive",
+      "value": true
+    },
+    {
+      "name": "allocate_pg_hugepage",
+      "value": false
+    },
+    {
+      "name": "cluster_database",
+      "value": false
+    },
+    {
+      "name": "auth_method",
+      "value": "md5"
+    },
+    {
+      "name": "database_names",
+      "value": "testdb"
+    },
+    {
+      "name": "db_password",
+      "value": "Password.1"
+    }
+  ],
+  "timeMachineInfo": {
+    "name": "booking_pgdb_TM",
+    "description": "",
+    "slaId": "de4b96d6-420c-4f2b-98c6-88bd8f4dddcc",
+    "schedule": {
+      "snapshotTimeOfDay": {
+        "hours": 15,
+        "minutes": 0,
+        "seconds": 0
+      },
+      "continuousSchedule": {
+        "enabled": true,
+        "logBackupInterval": 30,
+        "snapshotsPerDay": 1
+      },
+      "weeklySchedule": {
+        "enabled": true,
+        "dayOfWeek": "MONDAY"
+      },
+      "monthlySchedule": {
+        "enabled": true,
+        "dayOfMonth": "28"
+      },
+      "quartelySchedule": {
+        "enabled": true,
+        "startMonth": "JANUARY",
+        "dayOfMonth": "28"
+      },
+      "yearlySchedule": {
+        "enabled": false,
+        "dayOfMonth": 31,
+        "month": "DECEMBER"
+      }
+    },
+    "tags": [],
+    "autoTuneLogDrive": true
+  },
+  "createDbserver": true,
+  "clustered": false,
+  "nxClusterId": "ed4b604c-f019-417b-8139-9d6f10cdb24c",
+  "nodes": [
+    {
+      "properties": [],
+      "vmName": "booking_pgdb_VM"
+    }
+  ],
+  "autoTuneStagingDrive": true,
+  "vmPassword": "Password.1"
+}
